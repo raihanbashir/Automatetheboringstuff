@@ -6,6 +6,8 @@ def collatz(num):
         else:
             num = 3 * num + 1
             print(num)
-            
-num = int(input('Enter a number : '))
-collatz(num)
+try :
+    num = int(input('Enter a number : '))
+    collatz(num)
+except ValueError:
+    print('Cant enter a string value')
